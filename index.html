@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zambian Heritage - Discover Our History</title>
+    <title>Museum of Living Heritage - Discover Zambian History</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
@@ -18,15 +18,23 @@
                 <div class="logo">
                     <a href="/">
                         <span class="logo-icon">🇿🇲</span>
-                        <span class="logo-text">Zambian Heritage</span>
+                        <span class="logo-text">Museum of Living Heritage</span>
                     </a>
                 </div>
                 <nav class="main-nav">
                     <ul class="nav-list">
-                        <li><a href="#explore">Explore History</a></li>
+                        <li><a href="#explore">Explore</a></li>
                         <li><a href="#regions">Regions</a></li>
                         <li><a href="#timeline">Timeline</a></li>
                         <li><a href="#about">About</a></li>
+                        <li class="nav-dropdown">
+                            <a href="#" class="dropdown-toggle">Get Involved</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#volunteer">Volunteer</a></li>
+                                <li><a href="#donate">Donate</a></li>
+                                <li><a href="#contribute">Contribute</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
                 <div class="header-actions">
@@ -66,22 +74,21 @@
             <div class="container">
                 <div class="section-header">
                     <h2>Explore Zambian History</h2>
-                    <p>Select a time period and location to discover historical events, cultural heritage, and significant moments.</p>
+                    <p>Select a category and location to discover heritage sites across Zambia.</p>
                 </div>
 
                 <!-- Filter Controls -->
                 <div class="filter-controls">
                     <div class="filter-group">
-                        <label for="era-select">Time Period</label>
-                        <select id="era-select">
-                            <option value="all">All Periods</option>
-                            <option value="prehistoric">Prehistoric Era (3M+ years ago)</option>
-                            <option value="stone-age">Stone Age (3M - 2000 BCE)</option>
-                            <option value="iron-age">Iron Age (300 - 1500 CE)</option>
-                            <option value="kingdoms">Kingdom Era (1500 - 1800)</option>
-                            <option value="colonial">Colonial Period (1800 - 1964)</option>
-                            <option value="independence">Independence Era (1964 - 1991)</option>
-                            <option value="modern">Modern Zambia (1991 - Present)</option>
+                        <label for="category-select">Category</label>
+                        <select id="category-select">
+                            <option value="all">All Categories</option>
+                            <option value="museum">Museum</option>
+                            <option value="waterfall">Waterfall</option>
+                            <option value="historic-building">Historic Building</option>
+                            <option value="monument">Monument</option>
+                            <option value="rock-art">Rock Art</option>
+                            <option value="archaeological-site">Archaeological Site</option>
                         </select>
                     </div>
 
@@ -102,7 +109,7 @@
                         </select>
                     </div>
 
-                    <button id="filter-btn" class="btn btn-secondary">Apply Filters</button>
+                    <button id="filter-btn" class="btn btn-filter">Apply Filters</button>
                 </div>
 
                 <!-- Results Grid -->
@@ -273,9 +280,9 @@
                 <div class="footer-brand">
                     <div class="logo">
                         <span class="logo-icon">🇿🇲</span>
-                        <span class="logo-text">Zambian Heritage</span>
+                        <span class="logo-text">Museum of Living Heritage</span>
                     </div>
-                    <p>Preserving and sharing Zambia's rich history for future generations.</p>
+                    <p>Preserving and sharing Zambia's living history for future generations.</p>
                 </div>
 
                 <div class="footer-links">
@@ -310,7 +317,7 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2024 Zambian Heritage. All rights reserved.</p>
+                <p>&copy; 2024 Museum of Living Heritage. All rights reserved.</p>
                 <div class="footer-social">
                     <a href="#" aria-label="Facebook">FB</a>
                     <a href="#" aria-label="Twitter">TW</a>
