@@ -1,9 +1,9 @@
 // ========================================
 // Museum of Living Heritage - JavaScript
-// Historical sites and filtering functionality
+// Real heritage sites data from National Heritage Monuments Project
 // ========================================
 
-// Heritage Sites Database
+// Heritage Sites Database - Real Zambian Sites
 const heritageSites = [
     // Museums
     {
@@ -11,261 +11,171 @@ const heritageSites = [
         title: "Livingstone Museum",
         category: "museum",
         location: "southern",
-        description: "Zambia's oldest and largest museum, housing extensive collections on archaeology, ethnography, and the history of David Livingstone's expeditions.",
-        image: "https://images.unsplash.com/photo-1584799235813-aaf50775698c?w=600&q=80",
+        description: "Zambia's oldest and largest museum, established in 1934. Houses extensive collections on archaeology, ethnography, history, and natural history, including artifacts from David Livingstone's expeditions.",
+        image: "https://drive.google.com/uc?export=view&id=1KKb47AotJL6J_m6b9Tv60p7cjXsgiGy3",
         tag: "Museum"
     },
     {
         id: 2,
-        title: "Lusaka National Museum",
+        title: "Railway Museum, Livingstone",
         category: "museum",
-        location: "lusaka",
-        description: "The national museum featuring contemporary art, cultural heritage exhibits, and displays on Zambian history from prehistoric times to independence.",
-        image: "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=600&q=80",
+        location: "southern",
+        description: "A fascinating museum showcasing Zambia's railway heritage with vintage locomotives, coaches, and memorabilia from the colonial era when railways transformed the region.",
+        image: "https://drive.google.com/uc?export=view&id=1xAtJs2daPR5EuAWc9Bkm1Tz4hH-usuK2",
         tag: "Museum"
     },
     {
         id: 3,
-        title: "Moto Moto Museum",
+        title: "Nayuma Museum",
         category: "museum",
-        location: "northern",
-        description: "Dedicated to the Bemba people and other tribes of Northern Zambia, featuring traditional artifacts, witchcraft items, and cultural displays.",
-        image: "https://images.unsplash.com/photo-1590845947698-8924d7409b56?w=600&q=80",
-        tag: "Museum"
-    },
-    {
-        id: 4,
-        title: "Copperbelt Museum",
-        category: "museum",
-        location: "copperbelt",
-        description: "Chronicles the history of copper mining in Zambia, displaying mining equipment, geological specimens, and the social history of the Copperbelt.",
-        image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&q=80",
-        tag: "Museum"
-    },
-    {
-        id: 5,
-        title: "Choma Museum",
-        category: "museum",
-        location: "southern",
-        description: "A regional museum showcasing the rich cultural heritage of the Tonga people, including traditional crafts, music, and farming implements.",
-        image: "https://images.unsplash.com/photo-1590845947670-c009801ffa74?w=600&q=80",
+        location: "western",
+        description: "Located in Mongu, this museum preserves the cultural heritage of the Lozi people and the Barotseland kingdom, featuring traditional artifacts and royal regalia.",
+        image: "https://drive.google.com/uc?export=view&id=1CSlVdpvGN_s2GabJFVzEo7ptM4gRsGgX",
         tag: "Museum"
     },
 
     // Waterfalls
     {
-        id: 6,
-        title: "Victoria Falls (Mosi-oa-Tunya)",
-        category: "waterfall",
-        location: "southern",
-        description: "One of the Seven Natural Wonders of the World, known locally as 'The Smoke That Thunders'. A UNESCO World Heritage Site spanning the Zambezi River.",
-        image: "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=600&q=80",
-        tag: "Waterfall"
-    },
-    {
-        id: 7,
-        title: "Kalambo Falls",
-        category: "waterfall",
-        location: "northern",
-        description: "The second-highest uninterrupted waterfall in Africa at 235 meters, with archaeological sites containing evidence of early human habitation.",
-        image: "https://images.unsplash.com/photo-1551632811-561732d1e306?w=600&q=80",
-        tag: "Waterfall"
-    },
-    {
-        id: 8,
-        title: "Lumangwe Falls",
-        category: "waterfall",
-        location: "northern",
-        description: "A spectacular 30-meter waterfall on the Kalungwishi River, surrounded by pristine miombo woodland and rich birdlife.",
-        image: "https://images.unsplash.com/photo-1489392191049-fc10c97e64b6?w=600&q=80",
-        tag: "Waterfall"
-    },
-    {
-        id: 9,
-        title: "Ngonye Falls",
-        category: "waterfall",
-        location: "western",
-        description: "A horseshoe-shaped waterfall on the Zambezi River, sacred to the Lozi people and an important site for traditional ceremonies.",
-        image: "https://images.unsplash.com/photo-1523805009345-7448845a9e53?w=600&q=80",
-        tag: "Waterfall"
-    },
-    {
-        id: 10,
+        id: 4,
         title: "Chishimba Falls",
         category: "waterfall",
         location: "northern",
-        description: "A series of three waterfalls on the Luombe River, considered sacred by local communities and featuring a natural power station.",
-        image: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=600&q=80",
+        description: "A sacred series of three waterfalls on the Luombe River near Kasama. The falls hold spiritual significance for local communities and feature a natural power station built in colonial times.",
+        image: "https://drive.google.com/uc?export=view&id=1KHqIbTG99arc1yHyXjP9nfORveAZ4sEX",
+        tag: "Waterfall"
+    },
+    {
+        id: 5,
+        title: "Kundalila Falls",
+        category: "waterfall",
+        location: "central",
+        description: "A stunning 75-meter waterfall near Serenje, whose name means 'Crying Dove' in Bemba. The falls cascade into a crystal-clear pool surrounded by pristine miombo woodland.",
+        image: "https://drive.google.com/uc?export=view&id=1ZuZPvEb3U9INVpmHwPlua73867cLQ0GU",
         tag: "Waterfall"
     },
 
     // Historic Buildings
     {
-        id: 11,
-        title: "David Livingstone Memorial",
-        category: "historic-building",
-        location: "northern",
-        description: "Located in Chitambo where David Livingstone died in 1873. A memorial marks the spot where his heart was buried under a mvula tree.",
-        image: "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=600&q=80",
-        tag: "Historic Building"
-    },
-    {
-        id: 12,
-        title: "Old Government House",
-        category: "historic-building",
-        location: "southern",
-        description: "The former colonial administrative building in Livingstone, now part of the town's heritage trail showcasing British colonial architecture.",
-        image: "https://images.unsplash.com/photo-1569587112025-0d460e81a126?w=600&q=80",
-        tag: "Historic Building"
-    },
-    {
-        id: 13,
-        title: "Victoria Falls Bridge",
-        category: "historic-building",
-        location: "southern",
-        description: "An iconic steel arch bridge built in 1905, spanning the Zambezi gorge 128 meters above the river. A testament to colonial-era engineering.",
-        image: "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=600&q=80",
-        tag: "Historic Building"
-    },
-    {
-        id: 14,
-        title: "Shiwa Ng'andu Manor",
+        id: 6,
+        title: "Shiwa Ng'andu House",
         category: "historic-building",
         location: "muchinga",
-        description: "A grand English-style manor house built in the 1920s by Stewart Gore-Browne, featuring a chapel, hot springs, and extensive grounds.",
-        image: "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=600&q=80",
+        description: "A grand English-style manor house built in the 1920s by Stewart Gore-Browne in the remote bush. Features a chapel, extensive grounds, and hot springs - a remarkable piece of colonial history.",
+        image: "https://drive.google.com/uc?export=view&id=1EDhIZZ03NUnGaNao8NKH_TKMxQ4GVuWO",
         tag: "Historic Building"
     },
     {
-        id: 15,
-        title: "Limulunga Royal Palace",
+        id: 7,
+        title: "Chilenje House 394",
         category: "historic-building",
-        location: "western",
-        description: "The dry-season palace of the Lozi King (Litunga), destination of the famous Kuomboka ceremony when the floodplains fill with water.",
-        image: "https://images.unsplash.com/photo-1590845947698-8924d7409b56?w=600&q=80",
+        location: "lusaka",
+        description: "Kenneth Kaunda's independence home where Zambia's founding father lived during the struggle for independence. Now a national monument preserving the history of Zambia's liberation movement.",
+        image: "https://drive.google.com/uc?export=view&id=1LMR8l7RkMWJZNfcTurV2cdCnnZJBtkId",
+        tag: "Historic Building"
+    },
+    {
+        id: 8,
+        title: "Njanji Commuter Building",
+        category: "historic-building",
+        location: "lusaka",
+        description: "A historic building in Lusaka that served as an important gathering place during the independence movement, witnessing key moments in Zambia's path to freedom.",
+        image: "https://drive.google.com/uc?export=view&id=1_rHjONs6CTEbo-brf8seVPqDR-PXN_s2",
         tag: "Historic Building"
     },
 
     // Monuments
     {
-        id: 16,
-        title: "Freedom Statue",
+        id: 9,
+        title: "Chambeshi Monument",
         category: "monument",
-        location: "lusaka",
-        description: "A bronze statue of a man breaking chains, symbolizing Zambia's independence from colonial rule. Located in the heart of Lusaka.",
-        image: "https://images.unsplash.com/photo-1590845947670-c009801ffa74?w=600&q=80",
+        location: "northern",
+        description: "Marks the spot where German General von Lettow-Vorbeck surrendered on November 14, 1918 - three days after the WWI Armistice. The last German forces in Africa laid down arms here.",
+        image: "https://drive.google.com/uc?export=view&id=1EVexLQJF68VFgoVKEMoMHp5rsaeHgyog",
         tag: "Monument"
     },
     {
-        id: 17,
-        title: "Kenneth Kaunda Statue",
+        id: 10,
+        title: "Zambezi Source",
         category: "monument",
-        location: "lusaka",
-        description: "A monument honoring Zambia's founding father and first president, located at the Kenneth Kaunda International Airport.",
-        image: "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=600&q=80",
+        location: "northwestern",
+        description: "The sacred spring in Kalene Hills where the mighty Zambezi River begins its 2,574km journey to the Indian Ocean. A pilgrimage site marked by a national monument.",
+        image: "https://drive.google.com/uc?export=view&id=1tZJvnMDv1840M0wtFirI6ybt9yEYPl99",
         tag: "Monument"
     },
     {
-        id: 18,
-        title: "Independence Memorial",
+        id: 11,
+        title: "Old Drift Cemetery",
         category: "monument",
-        location: "lusaka",
-        description: "A commemorative site marking Zambia's independence on October 24, 1964, featuring historical displays and the independence flame.",
-        image: "https://images.unsplash.com/photo-1569587112025-0d460e81a126?w=600&q=80",
-        tag: "Monument"
-    },
-    {
-        id: 19,
-        title: "Dag Hammarskjold Memorial",
-        category: "monument",
-        location: "copperbelt",
-        description: "A memorial at the crash site where UN Secretary-General Dag Hammarskjold died in 1961. A solemn place of international significance.",
-        image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&q=80",
+        location: "southern",
+        description: "The haunting colonial-era cemetery near Victoria Falls, final resting place of early European settlers who succumbed to malaria and other diseases in the late 1800s.",
+        image: "https://drive.google.com/uc?export=view&id=14Z4ifUxmYvM_B0Glr2DBjHZ9xLvXZ8e5",
         tag: "Monument"
     },
 
     // Rock Art
     {
-        id: 20,
-        title: "Nsalu Cave Rock Paintings",
-        category: "rock-art",
-        location: "central",
-        description: "Ancient rock art site featuring geometric patterns and symbolic figures dating back thousands of years, offering insights into early spiritual beliefs.",
-        image: "https://images.unsplash.com/photo-1533669955142-6a73332af4db?w=600&q=80",
-        tag: "Rock Art"
-    },
-    {
-        id: 21,
-        title: "Mwela Rock Paintings",
+        id: 12,
+        title: "Mwela Rocks",
         category: "rock-art",
         location: "northern",
-        description: "One of the most significant rock art sites in Zambia, featuring over 1,000 paintings including human figures, animals, and abstract designs.",
-        image: "https://images.unsplash.com/photo-1551632811-561732d1e306?w=600&q=80",
+        description: "One of the most significant rock art sites in Zambia, featuring over 1,000 ancient paintings including human figures, animals, and geometric designs spanning thousands of years.",
+        image: "https://drive.google.com/uc?export=view&id=1ZrdAhqKFqayRK3gS3aS9gipUyNst6_Pv",
         tag: "Rock Art"
     },
     {
-        id: 22,
-        title: "Nachikufu Cave",
-        category: "rock-art",
-        location: "muchinga",
-        description: "A national monument containing rock paintings and archaeological deposits spanning 15,000 years of human occupation.",
-        image: "https://images.unsplash.com/photo-1584799235813-aaf50775698c?w=600&q=80",
-        tag: "Rock Art"
-    },
-    {
-        id: 23,
-        title: "Mumbwa Caves Rock Art",
+        id: 13,
+        title: "Nsalu Cave",
         category: "rock-art",
         location: "central",
-        description: "Rock shelters with ancient paintings and archaeological evidence of Stone Age occupation, important for understanding human prehistory.",
-        image: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=600&q=80",
+        description: "Ancient rock art site in Mkushi featuring geometric patterns and symbolic figures dating back thousands of years, offering insights into the spiritual beliefs of early inhabitants.",
+        image: "https://drive.google.com/uc?export=view&id=1wAv5zt9zp8wn6JTvF8JyvsSRxoDWcgpP",
+        tag: "Rock Art"
+    },
+    {
+        id: 14,
+        title: "Katolola Rock Art Site",
+        category: "rock-art",
+        location: "eastern",
+        description: "A remarkable collection of prehistoric rock paintings in Eastern Province, showcasing the artistic traditions of ancient hunter-gatherer communities.",
+        image: "https://drive.google.com/uc?export=view&id=1U_V3CMw7dn0A_XqfiNoNPr5xz35A-Ei2",
         tag: "Rock Art"
     },
 
     // Archaeological Sites
     {
-        id: 24,
-        title: "Kabwe (Broken Hill) Site",
+        id: 15,
+        title: "Nachikufu Cave",
         category: "archaeological-site",
-        location: "central",
-        description: "Discovery site of Homo rhodesiensis skull in 1921, one of the most important paleoanthropological finds in Africa, dating back 300,000 years.",
-        image: "https://images.unsplash.com/photo-1584799235813-aaf50775698c?w=600&q=80",
+        location: "muchinga",
+        description: "A national monument containing rock paintings and archaeological deposits spanning over 15,000 years of human occupation. Evidence of the 'Nachikufan' stone tool industry was first identified here.",
+        image: "https://drive.google.com/uc?export=view&id=11EUBBi_eZSYnm49-RXzKmZ9aJa_MbDDt",
         tag: "Archaeological Site"
     },
     {
-        id: 25,
-        title: "Ingombe Ilede",
-        category: "archaeological-site",
-        location: "southern",
-        description: "A medieval trading settlement near the Zambezi-Kafue confluence, yielding gold jewelry, copper crosses, and evidence of long-distance trade.",
-        image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&q=80",
-        tag: "Archaeological Site"
-    },
-    {
-        id: 26,
-        title: "Kalambo Falls Archaeological Site",
-        category: "archaeological-site",
-        location: "northern",
-        description: "Evidence of continuous human occupation for over 250,000 years, with preserved wooden tools and the earliest known use of fire in the region.",
-        image: "https://images.unsplash.com/photo-1551632811-561732d1e306?w=600&q=80",
-        tag: "Archaeological Site"
-    },
-    {
-        id: 27,
-        title: "Gwisho Hot Springs",
-        category: "archaeological-site",
-        location: "southern",
-        description: "A Stone Age site with exceptionally preserved organic materials including wooden implements, providing rare insights into prehistoric life.",
-        image: "https://images.unsplash.com/photo-1523805009345-7448845a9e53?w=600&q=80",
-        tag: "Archaeological Site"
-    },
-    {
-        id: 28,
-        title: "Twin Rivers Kopje",
+        id: 16,
+        title: "Leopards Hill Cave",
         category: "archaeological-site",
         location: "lusaka",
-        description: "Archaeological site near Lusaka containing pigments and grinding stones suggesting early symbolic behavior dating back 400,000 years.",
-        image: "https://images.unsplash.com/photo-1590845947670-c009801ffa74?w=600&q=80",
+        description: "An important archaeological site near Lusaka containing evidence of Stone Age occupation and rich deposits that help tell the story of human prehistory in Zambia.",
+        image: "https://drive.google.com/uc?export=view&id=130kR1hyFZPUBOeM_cJT0lNcLuERmoefI",
+        tag: "Archaeological Site"
+    },
+    {
+        id: 17,
+        title: "Kifubwa Rock Shelter",
+        category: "archaeological-site",
+        location: "northwestern",
+        description: "A significant rock shelter site containing ancient rock engravings and archaeological evidence of early human habitation in northwestern Zambia.",
+        image: "https://drive.google.com/uc?export=view&id=1FrcpX7fEf2h60Jr-TAmdbumWIsZfoAKU",
+        tag: "Archaeological Site"
+    },
+    {
+        id: 18,
+        title: "Chirundu Fossil Forest",
+        category: "archaeological-site",
+        location: "southern",
+        description: "A remarkable site containing petrified tree trunks millions of years old, providing evidence of ancient forests and climate conditions in the Zambezi Valley.",
+        image: "https://drive.google.com/uc?export=view&id=1L352lJzyydSFxyHDvrtElS2RlE7aCP_6",
         tag: "Archaeological Site"
     }
 ];
@@ -307,7 +217,7 @@ function createSiteCard(site) {
     return `
         <article class="history-card" data-category="${site.category}" data-location="${site.location}">
             <div class="history-card-image">
-                <img src="${site.image}" alt="${site.title}" loading="lazy" />
+                <img src="${site.image}" alt="${site.title}" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=600&q=80'" />
                 <span class="history-card-tag">${site.tag}</span>
             </div>
             <div class="history-card-content">
@@ -408,7 +318,7 @@ if (mobileMenuBtn && mainNav) {
     });
 }
 
-// Search functionality placeholder
+// Search functionality
 const searchBtn = document.querySelector('.search-btn');
 if (searchBtn) {
     searchBtn.addEventListener('click', () => {
@@ -448,5 +358,5 @@ if (newsletterForm) {
     });
 }
 
-console.log('Museum of Living Heritage website loaded successfully!');
-console.log(`Loaded ${heritageSites.length} heritage sites.`);
+console.log('Museum of Living Heritage loaded successfully!');
+console.log(`Loaded ${heritageSites.length} real Zambian heritage sites.`);
