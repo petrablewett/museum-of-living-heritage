@@ -170,8 +170,9 @@ const heritageSites = [
         category: "archaeological-site",
         location: "lusaka",
         description: "An important archaeological site near Lusaka containing evidence of Stone Age occupation and rich deposits that help tell the story of human prehistory in Zambia.",
-        image: "https://drive.google.com/uc?export=view&id=130kR1hyFZPUBOeM_cJT0lNcLuERmoefI",
-        tag: "Archaeological Site"
+        image: "images/leopards-hill-cave/main.jpg",
+        tag: "Archaeological Site",
+        link: "leopards-hill-cave.html"
     },
     {
         id: 17,
