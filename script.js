@@ -152,8 +152,9 @@ const heritageSites = [
         category: "archaeological-site",
         location: "muchinga",
         description: "A national monument containing rock paintings and archaeological deposits spanning over 15,000 years of human occupation. Evidence of the 'Nachikufan' stone tool industry was first identified here.",
-        image: "https://drive.google.com/uc?export=view&id=11EUBBi_eZSYnm49-RXzKmZ9aJa_MbDDt",
-        tag: "Archaeological Site"
+        image: "images/nachikufu-cave/main.jpg",
+        tag: "Archaeological Site",
+        link: "nachikufu-cave.html"
     },
     {
         id: 16,
