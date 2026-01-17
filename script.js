@@ -12,8 +12,9 @@ const heritageSites = [
         category: "museum",
         location: "southern",
         description: "Zambia's oldest and largest museum, established in 1934. Houses extensive collections on archaeology, ethnography, history, and natural history, including artifacts from David Livingstone's expeditions.",
-        image: "https://drive.google.com/uc?export=view&id=1KKb47AotJL6J_m6b9Tv60p7cjXsgiGy3",
-        tag: "Museum"
+        image: "images/livingstone-museum/main.jpg",
+        tag: "Museum",
+        link: "livingstone-museum.html"
     },
     {
         id: 2,
