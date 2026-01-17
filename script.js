@@ -186,8 +186,9 @@ const heritageSites = [
         category: "archaeological-site",
         location: "southern",
         description: "A remarkable site containing petrified tree trunks millions of years old, providing evidence of ancient forests and climate conditions in the Zambezi Valley.",
-        image: "https://drive.google.com/uc?export=view&id=1L352lJzyydSFxyHDvrtElS2RlE7aCP_6",
-        tag: "Archaeological Site"
+        image: "images/chirundu-fossil-forest/main.jpg",
+        tag: "Archaeological Site",
+        link: "chirundu-fossil-forest.html"
     }
 ];
 
