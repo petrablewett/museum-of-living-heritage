@@ -109,8 +109,9 @@ const heritageSites = [
         category: "monument",
         location: "southern",
         description: "The haunting colonial-era cemetery near Victoria Falls, final resting place of early European settlers who succumbed to malaria and other diseases in the late 1800s.",
-        image: "https://drive.google.com/uc?export=view&id=14Z4ifUxmYvM_B0Glr2DBjHZ9xLvXZ8e5",
-        tag: "Monument"
+        image: "images/old-drift/main.jpg",
+        tag: "Monument",
+        link: "old-drift.html"
     },
 
     // Rock Art
