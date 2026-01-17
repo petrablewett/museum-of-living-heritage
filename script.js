@@ -83,8 +83,9 @@ const heritageSites = [
         category: "historic-building",
         location: "lusaka",
         description: "A historic building in Lusaka that served as an important gathering place during the independence movement, witnessing key moments in Zambia's path to freedom.",
-        image: "https://drive.google.com/uc?export=view&id=1_rHjONs6CTEbo-brf8seVPqDR-PXN_s2",
-        tag: "Historic Building"
+        image: "images/njanji-commuter-building/main.jpg",
+        tag: "Historic Building",
+        link: "njanji-commuter-building.html"
     },
 
     // Monuments
